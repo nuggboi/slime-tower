@@ -1,4 +1,5 @@
 function love.load()
+    --what da helly pls work
 
     --pixel perfect
     love.graphics.setDefaultFilter("nearest","nearest")
