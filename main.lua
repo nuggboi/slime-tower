@@ -9,7 +9,7 @@ function love.load()
     width,height=love.graphics.getDimensions()
 
     --load 16x16 sprite
-    tile=love.graphics.newImage("background.png")
+    tile=love.graphics.newImage("assets/background.png")
 
     --make image repeat instead of stretching
     tile:setWrap("repeat","repeat")
@@ -26,8 +26,8 @@ function love.load()
     world = love.physics.newWorld(0,1200,true)
 
     --player config
-    slime1 = love.graphics.newImage("slime1.png")
-    slime2 = love.graphics.newImage("slime2.png")
+    slime1 = love.graphics.newImage("assets/slime1.png")
+    slime2 = love.graphics.newImage("assets/slime2.png")
     player={
         speed=400,
         scale=4,
@@ -43,10 +43,10 @@ function love.load()
     player.body:setFixedRotation(true)--prevents flipping over
 
     --platforms config
-    wall1=love.graphics.newImage("wall1.png")
-    wall1_flip=love.graphics.newImage("wall1_flip.png")
-    wall2=love.graphics.newImage("wall2.png")
-    wall2_flip=love.graphics.newImage("wall2_flip.png")
+    wall1=love.graphics.newImage("assets/wall1.png")
+    wall1_flip=love.graphics.newImage("assets/wall1_flip.png")
+    wall2=love.graphics.newImage("assets/wall2.png")
+    wall2_flip=love.graphics.newImage("assets/wall2_flip.png")
 
     --list to hold multiple platforms
     platformList={}
@@ -94,9 +94,9 @@ function love.load()
     gamestart=false
 
     --main menu
-    title=love.graphics.newImage("title.png")
-    playbutton=love.graphics.newImage("play.png")
-    starttext=love.graphics.newImage("starttext.png")
+    title=love.graphics.newImage("assets/title.png")
+    playbutton=love.graphics.newImage("assets/play.png")
+    starttext=love.graphics.newImage("assets/starttext.png")
 end
 
 function love.update(dt)
